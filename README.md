@@ -1,50 +1,74 @@
 
-# Flappy Bird NEAT
+# Flappy Bird AI using NEAT
 
-This Python project implements the Flappy Bird game using the NEAT (NeuroEvolution of Augmenting Topologies) algorithm. The game utilizes the pygame library for visualization and NEAT to train a neural network to play Flappy Bird.
+Train an AI to play Flappy Bird using NEAT (NeuroEvolution of Augmenting Topologies).
 
-## Project Structure
-- `_pycache_`: A folder containing Python bytecode files.
-- `imgs`: A folder containing images used in the game (e.g., bird, pipes, background).
-- `config-feedforward.txt`: A configuration file for NEAT.
-- `test.py`: The main script for running the Flappy Bird game and NEAT algorithm.
-- `visualize.py`: A script to visualize the neural network and training statistics.
+![Flappy Bird](imgs/bg.png)
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Installation](#installation)
+- [Usage](#usage)
+- [File Descriptions](#file-descriptions)
+- [Requirements](#requirements)
+- [Author](#author)
+- [License](#license)
+
+## Overview
+
+This project implements an AI agent to play the popular game Flappy Bird. It uses the NEAT algorithm to evolve neural networks that control the bird's actions, aiming to achieve the highest score possible. The project includes scripts for training the AI (`test.py`), visualizing the training progress (`visualize.py`), and storing the configuration (`config-feedforward.txt`). Additionally, it contains image assets used in the game.
+
+## Installation
+
+1. Clone this repository to your local machine:
+   ```
+   git clone https://github.com/your_username/Flappy-Bird-AI.git
+   ```
+
+2. Navigate to the project directory:
+   ```
+   cd Flappy-Bird-AI
+   ```
+
+3. Install the required dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
 
 ## Usage
-1. Ensure you have Python installed along with the necessary dependencies specified in `requirements.txt`.
-2. Run `test.py` to start the game and observe the NEAT algorithm training the neural network.
-3. Optionally, use `visualize.py` to visualize the neural network architecture and training statistics.
 
-## Files Description
-- `test.py`: Contains the main code for the Flappy Bird game and NEAT algorithm implementation.
-- `visualize.py`: Provides functions to visualize training statistics, species, and the neural network architecture.
-- `config-feedforward.txt`: Configuration file for NEAT algorithm parameters.
-- `imgs`: Contains images used in the game (e.g., bird, pipes, background).
+1. Train the AI:
+   ```
+   python test.py
+   ```
 
-## Dependencies
+2. Visualize the training progress:
+   ```
+   python visualize.py
+   ```
+
+## File Descriptions
+
+1. **test.py**: Script to train the AI agent using the NEAT algorithm and pygame for game simulation.
+
+2. **visualize.py**: Script to visualize the training progress and neural network architecture.
+
+3. **config-feedforward.txt**: Configuration file for NEAT algorithm settings.
+
+4. **imgs/**: Folder containing image assets used in the game.
+
+## Requirements
+
 - Python 3.x
-- Pygame
 - NEAT-Python
-- Graphviz (optional, for neural network visualization)
+- Pygame
+- Graphviz (optional, for network visualization)
 
-## Running the Game
-To run the Flappy Bird game and observe the NEAT algorithm in action, execute `test.py`:
+## Author
 
-```bash
-python test.py
-```
-
-## Visualization
-You can visualize the neural network architecture and training statistics using `visualize.py`. Example usage:
-
-```bash
-python visualize.py
-```
-
-## Notes
-- The NEAT algorithm is used to train a neural network to play Flappy Bird effectively.
-- The project utilizes the Pygame library for game visualization.
-- Make sure to provide the necessary images in the `imgs` folder for the game to function properly.
+[Your Name/Username]
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+This project is licensed under the MIT License - see the LICENSE file for details.
